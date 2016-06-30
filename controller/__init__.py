@@ -11,12 +11,12 @@ class Gamepad(uinput.Device):
         self.emit_click(key)
 
     def hold_key(self, key):
-        u_key = getattr(uinput, "KEY_" + key)
-        self.emit(u_key, 1)
+        # u_key = getattr(uinput, "KEY_" + key)
+        self.emit(key, 1)
 
     def release_key(self, key):
-        u_key = getattr(uinput, "KEY_" + key)
-        self.emit(u_key, 0)
+        # u_key = getattr(uinput, "KEY_" + key)
+        self.emit(key, 0)
 
     def hold_key_for(self, key, time):
         # u_key = getattr(uinput, "KEY_" + key)
