@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+from ann.wolf_ann import wolf_main
+
+if __name__ == "__main__":
+    wolf_main()
